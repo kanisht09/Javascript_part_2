@@ -1,0 +1,123 @@
+
+
+/* padding border margin are important
+   
+   *  padding controls the amount of space between the elements content and its border
+   *  margin controls the amount of space between an element's border and its surroundings
+   * set margin to -ve value to fully cover the space between element border and screen
+   * line-height sets the height of each line. 
+
+*/
+
+
+body{
+
+    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+}
+header{
+    display: flex;
+
+}
+nav{
+    position: fixed;
+    top:0px;
+    left:0px;
+    font-size: 15px;
+    height: 38px;
+    width:100%;
+    padding: 8px;
+    margin: -15px;
+    font-family: Lobster,Helvetica;
+    background-color: cornflowerblue;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+}
+nav ul{
+    margin:10px;
+    padding:5px 0px 0px 5px;
+}
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+#box
+{
+    display: flex;
+}
+.card-one
+{
+    margin-left: 10px;
+    margin-top: 60px;
+    padding: 20px;
+    height:400px;
+    width:400px;
+    background:linear-gradient(35deg,cyan,rgb(255, 222, 222));
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: 16px;
+    font-family: Lobster;
+    display: flex;
+    flex-direction: row;
+
+    /* float:left; */
+}
+.card-two
+{
+    /* margin-bottom: 200px; */
+    margin-left: 40px;
+    padding: 20px;
+    height:400px;
+    width:800px;
+    background:linear-gradient(360deg,cyan,rgb(255, 222, 222));
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: 16px;
+    font-family: Lobster;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+
+    /* float:right; */
+}
+.home-button
+{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.fix-footer{
+    background:cornflowerblue;
+    padding:2px;
+    font-family: Lobster;
+    font-size: 15px;
+    margin: -15px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+p{
+    text-align: justify;
+    line-height:25px;
+}
+/* article{
+    display: inline-flex;
+
+} */
+.center-the-text{
+    text-align:center;
+}
+a:hover{
+    color:blue;
+}
+/* .main-content{
+    height:800px;
+    margin-top:30px;
+    margin-left:10px;
+    font-size: 20px;
+    font-family: monospace;
+} */
+.thin-blue-border{
+    border-color: rgb(255, 211, 128);
+    border-width: 5px;
+    border-style: solid;
+    /* border-radius:10px; */
+}
+/* footer{
+    display: flex;
+} */

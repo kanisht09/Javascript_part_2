@@ -1,0 +1,109 @@
+
+
+/* padding border margin are important
+   
+   *  padding controls the amount of space between the elements content and its border
+   *  margin controls the amount of space between an element's border and its surroundings
+   * set margin to -ve value to fully cover the space between element border and screen
+   * line-height sets the height of each line. 
+
+*/
+/* main{display: flex;} */
+header{
+    display: flex;
+}
+nav{
+    position: fixed;
+    top:0px;
+    left:0px;
+    font-size: 15px;
+    height: 38px;
+    width:100%;
+    padding: 8px;
+    margin: -15px;
+    font-family: Lobster,Helvetica;
+    background-color: cornflowerblue;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+}
+nav ul{
+    margin:10px;
+    padding:5px 0px 0px 5px;
+}
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+#box{
+    background: linear-gradient(rgb(15, 14, 14),grey,rgb(250, 192, 85)); 
+    display: flex;
+    height: 100vh;
+    width :auto;
+    margin-left: -15px;
+}
+#box_1
+{
+    display: flex;
+    width:120px;
+    /* background-color: royalblue; */
+    height:160px;
+    padding: 30px;
+    margin-top:60px;
+    margin-left: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+.img
+{
+    width: 500px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+#box_2
+{
+    position: relative;
+    display: flex;
+    width:500px;
+    /* background-color: ; */
+    font-size: 25px;
+    font-family: Lobster;
+    color:seashell;
+    height:160px;
+    padding: 30px;
+    margin-top:60px;
+    margin-left: 100px;
+    box-shadow: 0 10px 20px rgba(8, 7, 7, 0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+#box_2:hover{
+    animation-name: rainbow;
+    animation-duration: 4s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in;
+
+}
+@keyframes rainbow{
+    
+        0%{
+            left:0%;
+        }
+      50%{
+        left: 10%;
+        opacity: 0.1;
+      }
+      100%{
+          left:0%;
+      }     
+}
+.modify{
+    
+}
+footer{
+    width:auto;
+    text-align: center;
+    margin: -15px;
+    padding: 10px;
+    background:transparent;
+}
