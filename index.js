@@ -288,31 +288,123 @@
 
 // Lecture : Object Methods   10/05/2021
 
-const Ritesh={
-    // properties
-        firstName:'Ritesh',
-        lastName:'Agarwal',
-        birthYear:1989,
-        job:'Student',
-        friends:['Ravi','Ris','Vicks','Sal','Chaman','nnat','aiz','abhinabh'],
-        calcAge:function(birthYear)
-        {
-            return 2021-birthYear;
-        }
-    };
-    console.log(Ritesh);
+// const Ritesh={
+//     // properties
+//         firstName:'Itesh',
+//         lastName:'Agarwal',
+//         birthYear:1989,
+//         hasDriverLicense:false,
+//         job:'Student',
+//         friends:['Ravi','Ris','Vicks','Sal','Chaman','abhinabh','nnat','iz'],
+//         // calcAge:function(birthYear)
+//         // {
+//         //     return 2021-birthYear;
+//         // }
 
-console.log(Ritesh.calcAge(1989));
-console.log(Ritesh['calcAge'](1991));
+//         calcAge:function()
+//         {
+//             this.age=2021-this.birthYear;
+//             return this.age;
+//         },
+//         summarY:function()
+//         {
+//             return `${this.firstName} is a ${this.calcAge()} year old ${this.job} and he has ${this.hasDriverLicense ?'a':'no'} driver license.`
+//         }
+        
+//     };
+// console.log(Ritesh);
+// console.log(Ritesh.calcAge());
+// console.log(Ritesh.age);
+
+// // Challenge 
+// console.log(Ritesh.summarY());
+
+// // assignment
+
+// const myCountry={
+//     country:'India',
+//     capital:'Delhi',
+//     language:'Hindi',
+//     population:13.3,
+//     neighbours:['Maldives','China','Sri Lanka','Bangladesh'],
+//     describe:function()
+//     {
+//         return `I live in ${this.country} whose capital is ${this.capital}. In ${this.country} people speak ${this.language} and my country's population is ${this.population}.The neighbours of my country are ${this.neighbours}.`
+//     },
+//     checkIsland:function(){
+//         return this.isIsland=this.neighbours.length!=0;
+//     }
+
+// }
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland());
+
+// Coding Challenge #3   Date: 15/05/2021
+
+// const Mark={
+
+//     fullName:'Mark Miller',
+//     mass:78,
+//     height:1.69,
+//     calcBMI:function()
+//     {
+//         return this.BMI=this.mass/((this.height)*(this.height));
+//     }
+// }
+// const John={
+//     fullName:'John Smith',
+//     mass:92,
+//     height:1.95,
+//     calcBMI:function()
+//     {
+//         return this.BMI=this.mass/((this.height)*(this.height));
+//     }
+// }
+// console.log(Mark.calcBMI(),John.calcBMI());
+// const resU=`${Mark.calcBMI()>John.calcBMI()?`${Mark.fullName} has higher BMI than ${John.fullName}`:`${John.fullName} has higher BMI than ${Mark.fullName}`}`;
+// console.log(resU);
 
 
+// Iteration: The for loop  Date: 15/05/2021
 
+// for(let i=1;i<=10;i++)
+// {
+//     console.log(`my time ${i}`);
+// }
+// // assignment
+// for(let i=1;i<=50;i++)
+// {
+//     console.log(`Voter number ${i} is currently voting`);
+// }
 
+// Lecture : Looping Arrays,breaking and Continuing  Date:15/05/2021
 
+const kanisht=[
+//properties
+    'Kanisht',
+    'Agarwal',
+    2021-2001,
+    'Student',
+    ['Ravi','Ris','Vicks','Sal','Chaman','nnat','aiz','abhinabh']
 
+];
 
+const types=[];
+for(let i=0;i<kanisht.length;i++)
+{
+    console.log(kanisht[i]);
+    //types[i]=typeof kanisht[i];
+    types.push(typeof kanisht[i]);  // cleaner method
+}
+console.log(types);
 
-
+const years=[1991,1971,1983,1934];
+const ages=[];
+for(let i=0;i<years.length;i++)
+{
+    ages.push(2021-years[i]);
+}
+console.log(ages);
 
 
 
