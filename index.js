@@ -1,7 +1,7 @@
 // Lecture :Activating Strict Mode
 // -> for writing secure Js code
 
-'use strict';  // for activatin strict mode
+"use strict"; // for activatin strict mode
 // it should be the very first statement then only it works
 
 // let hasDriversLicense=false;
@@ -14,7 +14,6 @@
 // const private=534;
 
 // Lecture : Functions Date : 16/4/2021
-
 
 // function logger(){
 //     console.log('My name is Kanisht!');
@@ -84,10 +83,9 @@
 // const pop33=percentageOfWorld2(12);
 // console.log(pop1,pop22,pop33);
 
-
 // // Lecture : Arrow Functions Date: 16/04/2021
 
-// const calcAge3=birthYear => 2021-birthYear; 
+// const calcAge3=birthYear => 2021-birthYear;
 // const age3=calcAge3(2001);
 // console.log(age3);
 
@@ -95,15 +93,13 @@
 //     const age=2021-birthYear;
 //     const retirement=65-age;
 //     return `${firstName} retires in ${retirement} years`;
-// } 
+// }
 // console.log(yearsUntilRetirement(2001,'Kanisht'));
 
 // const percentageOfWorld3=population=>(population/7900)*100;
 // console.log(percentageOfWorld3(1441),percentageOfWorld3(1366),percentageOfWorld3(12));
 
-
 // // Lecture : Functions Calling Other Functions Date: 17/04/2021
-
 
 // const describePopulation=(country,population)=>{
 //     const populationPercentage=percentageOfWorld1(population);
@@ -197,10 +193,7 @@
 // neighbours[xc]='Maldives';
 // console.log(neighbours);
 
-
-
 // // Coding Challenge #2   Date: 09/05/2021
-
 
 // const calcTip=(bill)=>{
 
@@ -285,7 +278,6 @@
 // myCountry['population']-=2;
 // console.log(myCountry.population);
 
-
 // Lecture : Object Methods   10/05/2021
 
 // const Ritesh={
@@ -310,13 +302,13 @@
 //         {
 //             return `${this.firstName} is a ${this.calcAge()} year old ${this.job} and he has ${this.hasDriverLicense ?'a':'no'} driver license.`
 //         }
-        
+
 //     };
 // console.log(Ritesh);
 // console.log(Ritesh.calcAge());
 // console.log(Ritesh.age);
 
-// // Challenge 
+// // Challenge
 // console.log(Ritesh.summarY());
 
 // // assignment
@@ -364,7 +356,6 @@
 // const resU=`${Mark.calcBMI()>John.calcBMI()?`${Mark.fullName} has higher BMI than ${John.fullName}`:`${John.fullName} has higher BMI than ${Mark.fullName}`}`;
 // console.log(resU);
 
-
 // Iteration: The for loop  Date: 15/05/2021
 
 // for(let i=1;i<=10;i++)
@@ -379,41 +370,162 @@
 
 // Lecture : Looping Arrays,breaking and Continuing  Date:15/05/2021
 
-const kanisht=[
-//properties
-    'Kanisht',
-    'Agarwal',
-    2021-2001,
-    'Student',
-    ['Ravi','Ris','Vicks','Sal','Chaman','nnat','aiz','abhinabh']
-
+const kanisht = [
+  //properties
+  "Kanisht",
+  "Agarwal",
+  2021 - 2001,
+  "Student",
+  ["Ravi", "Ris", "Vicks", "Sal", "Chaman", "nnat", "aiz", "abhinabh"],
 ];
 
-const types=[];
-for(let i=0;i<kanisht.length;i++)
-{
-    console.log(kanisht[i]);
-    //types[i]=typeof kanisht[i];
-    types.push(typeof kanisht[i]);  // cleaner method
+const types = [];
+for (let i = 0; i < kanisht.length; i++) {
+  console.log(kanisht[i]);
+  //types[i]=typeof kanisht[i];
+  types.push(typeof kanisht[i]); // cleaner method
 }
 console.log(types);
 
-const years=[1991,1971,1983,1934];
-const ages=[];
-for(let i=0;i<years.length;i++)
-{
-    ages.push(2021-years[i]);
+const years = [1991, 1971, 1983, 1934];
+const ages = [];
+for (let i = 0; i < years.length; i++) {
+  ages.push(2021 - years[i]);
 }
 console.log(ages);
 
+// assignment
 
+const populations = [13.3, 12, 56, 11];
 
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
 
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
+// console.log(percentages);
 
+const percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+let ct = 0;
+for (let i = 0; i < percentages2.length; i++) {
+  if (percentages2[i] != percentages[i]) {
+    break;
+  }
+  ct++;
+}
+console.log(ct);
 
+// Lecture : Looping Backwards and Loops in loops  Date: 15/05/2021
 
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
 
+console.log(listOfNeighbours);
 
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`Neighbour : ${listOfNeighbours[i][j]}`);
+  }
+}
 
+// Lecture : The while loop  Date: 26/05/2021
 
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
 
+const percentages3 = [];
+let i = 0;
+while (i < percentages.length) {
+  percentages3.push(percentageOfWorld3(percentages[i]));
+  i++;
+}
+i = 0;
+while (i < percentages3.length) {
+  console.log(percentages3[i]);
+  i++;
+}
+
+const dice = Math.trunc(Math.random() * 6);
+console.log(dice);
+
+// Coding Challenge 4:  Date: 26/05/2021
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+
+const calcTip = (bill) => {
+  if (bill >= 50 && bill <= 300) {
+    const tip = (15 * bill) / 100;
+    return tip;
+  } else {
+    const tip = (20 * bill) / 100;
+    return tip;
+  }
+};
+
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+  totals.push(tips[i] + bills[i]);
+}
+
+console.log(totals);
+
+const avg = (arr) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+const markS = [1, 2, 3, 4, 5];
+const myAvg = avg(markS);
+const reQ = avg(totals);
+console.log(myAvg);
+console.log(reQ);
+
+console.log(avg(tips));
+
+// practice :
+
+const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+let maxi = -1e9;
+let mini = 1e9;
+
+const calcTemperatureAmplitude = (temperatures) => {
+  for (let i = 0; i < temperatures.length; i++) {
+    if (typeof temperatures[i] == "number") {
+      maxi = Math.max(maxi, temperatures[i]);
+      mini = Math.min(mini, temperatures[i]);
+    }
+  }
+  return maxi - mini;
+};
+console.log(calcTemperatureAmplitude(temperatures));
+// console.log(maxi, mini);
+
+// Coding Challenge #1: Date: 26/05/2021
+
+const printForecast = (arr) => {
+  let st = "";
+
+  for (let i = 0; i < arr.length; i++) {
+    st = st + `...${arr[i]} ºC in ${i + 1} days`;
+  }
+  st = st + "...";
+  return st;
+};
+
+console.log(printForecast([17, 21, 23]));
+console.log(printForecast([12, 5, -5, 0, 4]));
